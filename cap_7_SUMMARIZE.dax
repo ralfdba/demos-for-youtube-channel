@@ -1,0 +1,10 @@
+﻿-- SUMMARIZE
+-- Devuelve una tabla de resumen de los totales solicitados en un conjunto de grupos.
+-- SUMMARIZE (<table>, <groupBy_columnName>[, <groupBy_columnName>]…[, <name>, <expression>]…)
+EVALUATE
+SUMMARIZE (
+    Producto,
+    Producto[Categoria],
+    Producto[Nombre],
+    "Precio", [Precio]
+)
